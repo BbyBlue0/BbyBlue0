@@ -1,32 +1,20 @@
 public class Elf1 {
     private String name; //Elf's name
     //private String job; //Elf's job
-    private int toys; //number of toys elf has created
-    //private Job job;
+    private Job job;
 
     public Elf1()
     {
         name = "Undetermined";
-      //  job = new Job();
-        toys = 0;
+       this.job = new Job();
+
     }
 
-    public Elf1(String name, int toys) //Assign name, give job from
+    public Elf1(String name, Job job) //Assign name, give job from Job class
     {
         this.name = name;
-       // this.job = job;
-        this.toys = toys;
+        this.job = new Job();
     }
 
-
-    public void updateToys()
-    {
-        toys += 1;
-    }
-
-    public int showToys()
-    {
-        return toys;
-    }
 
 }
