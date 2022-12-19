@@ -66,21 +66,21 @@ public class Job {
         return toysWrapped;
     }
 
-    public void makeToy() //Elf will make a toy. Increases toysMade by 1. owed will increase by elfs pay.
+    public void makeToy(String name) //Elf will make a toy. Increases toysMade by 1. owed will increase by elfs pay.
     {
-        System.out.println("The " + jobType + " elf is making a toy... \n    *Clatter Clatter* \nThe toy has been made!");
+        System.out.println(name + " is making a toy... \n    *Clatter Clatter* \nThe toy has been made!");
         owed += pay;
         toysMade += 1;
     }
-    public void wrapToy() //Elf will wrap a toy. Increases toysWrapped by 1. owed will increase by elfs pay.
+    public void wrapToy(String name) //Elf will wrap a toy. Increases toysWrapped by 1. owed will increase by elfs pay.
     {
-        System.out.println("The " + jobType + " elf is wrapping a present... \nPresent has been wrapped!");
+        System.out.println(name + " is wrapping a present... \nPresent has been wrapped!");
         owed += pay;
         toysWrapped += 1;
     }
-    public void packToy()
+    public void packToy(String name)
     {
-        System.out.println("The " + jobType + " elf is packing a toy... \nThe present has been packed! It is ready to go with santa to its new home!");
+        System.out.println(name + " is packing a toy... \nThe present has been packed! It is ready to go with santa to its new home!");
         owed += pay;
         toysPacked += 1;
     }
